@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="TEMPLATEController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zeroXessApp.JavaFX.DoctorRemoveMedicationController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="8000.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="8000.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="8000.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="8000.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="8000.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="8000.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="timeLabel" alignment="CENTER" prefHeight="39.0" prefWidth="8000.0" style="-fx-background-color: DARKGREY;" GridPane.columnSpan="2147483647" GridPane.valignment="TOP">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Button mnemonicParsing="false" onAction="#backClick" prefHeight="35.0" prefWidth="40.0" style="-fx-background-color: DARKGREY;" GridPane.valignment="TOP">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Arrow.png" />
+               </image></ImageView>
+         </graphic></Button>
+      <TableView fx:id="tableView" prefHeight="8000.0" prefWidth="8000.0" GridPane.columnSpan="3" GridPane.rowIndex="1" GridPane.rowSpan="2">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="75.0" text="Patient" />
+            <TableColumn fx:id="m1" prefWidth="75.0" text="Adderall" />
+            <TableColumn fx:id="m2" prefWidth="75.0" text="Anti-Biotics" />
+          <TableColumn fx:id="m3" prefWidth="75.0" text="Clonazepam" />
+            <TableColumn fx:id="m4" prefWidth="75.0" text="Gabapentin" />
+            <TableColumn fx:id="m5" prefWidth="75.0" text="Lexapro" />
+            <TableColumn fx:id="m6" prefWidth="75.0" text="Meloxicam" />
+            <TableColumn fx:id="m7" prefWidth="75.0" text="Naproxen" />
+            <TableColumn fx:id="m8" prefWidth="75.0" text="Trazodone" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button mnemonicParsing="false" onAction="#deleteUser" prefHeight="150.0" prefWidth="266.666" text="Delete selected prescribtion" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+      </Button>
+      <Label fx:id="deleteText" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <GridPane.margin>
+            <Insets top="5.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>

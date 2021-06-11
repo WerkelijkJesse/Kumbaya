@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zeroXessApp.JavaFX.ReadAndPickController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="8000.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="8000.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="8000.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="300.0" minHeight="10.0" prefHeight="300.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="230.0" minHeight="0.0" prefHeight="85.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="459.0" minHeight="10.0" prefHeight="313.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="573.0" minHeight="10.0" prefHeight="277.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label fx:id="timeLabel" alignment="CENTER" prefHeight="39.0" prefWidth="8000.0" style="-fx-background-color: DARKGREY;" GridPane.columnSpan="2147483647" GridPane.valignment="TOP">
+            <font>
+                <Font size="22.0" />
+            </font></Label>
+        <Button mnemonicParsing="false" onAction="#backClick" prefHeight="35.0" prefWidth="40.0" style="-fx-background-color: DARKGREY;" textFill="#ffffff00" GridPane.valignment="TOP">
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Pictures/Arrow.png" />
+                    </image></ImageView>
+            </graphic></Button>
+        <Button fx:id="button1" mnemonicParsing="false" onAction="#checkAnswer1" style="-fx-background-color: grey;" text="Button" textFill="#ffffff00" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <graphic>
+                <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+        <Button fx:id="button2" mnemonicParsing="false" onAction="#checkAnswer4" style="-fx-background-color: GREY;" textFill="#ffffff00" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <graphic>
+                <ImageView fx:id="imageView4" fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+        <Button fx:id="button3" mnemonicParsing="false" onAction="#checkAnswer3" style="-fx-background-color: GREY;" text="Button" textFill="#ffffff00" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <graphic>
+                <ImageView fx:id="imageView3" fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                    <viewport>
+                        <Rectangle2D />
+                    </viewport></ImageView>
+            </graphic>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+        </Button>
+        <Button fx:id="button4" mnemonicParsing="false" onAction="#checkAnswer2" style="-fx-background-color: GRAY;" text="Button" textFill="#ffffff00" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <graphic>
+                <ImageView fx:id="imageView2" fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+        <Label fx:id="wrong" prefHeight="80.0" prefWidth="267.0" textFill="#c30000" GridPane.columnIndex="1">
+            <font>
+                <Font name="Calibri" size="26.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+         <GridPane.margin>
+            <Insets bottom="-100.0" />
+         </GridPane.margin></Label>
+        <Label fx:id="question" prefHeight="17.0" prefWidth="338.0" text="Dog">
+            <font>
+                <Font size="26.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets left="150.0" />
+            </GridPane.margin></Label>
+        <Label fx:id="score" prefHeight="38.0" prefWidth="357.0" textFill="#44d376" GridPane.columnIndex="2">
+            <font>
+                <Font size="26.0" />
+            </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="-100.0" />
+         </GridPane.margin></Label>
+        <Label fx:id="right" layoutX="276.0" layoutY="97.0" prefHeight="53.0" prefWidth="266.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Label>
+        <Label fx:id="question1" layoutX="10.0" layoutY="97.0" prefHeight="31.0" prefWidth="263.0" text="Click:">
+            <font>
+                <Font name="Calibri Bold" size="26.0" />
+            </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+        </Label>
+    </children>
+</GridPane>

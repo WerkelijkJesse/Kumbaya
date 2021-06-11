@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zeroXessApp.JavaFX.EduReadHardController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="85.0" prefWidth="85.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="8000.0" minWidth="266.6666" prefWidth="638.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="64.0" prefWidth="77.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="145.0" minHeight="110.0" prefHeight="110.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="190.0" minHeight="150.0" prefHeight="153.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="187.0" minHeight="150.0" prefHeight="187.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="150.0" prefHeight="150.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label fx:id="timeLabelHard" alignment="CENTER" maxWidth="1280.0" prefHeight="39.0" prefWidth="8000.0" style="-fx-background-color: DARKGREY;" GridPane.columnSpan="3" GridPane.valignment="TOP">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="rightHard" alignment="CENTER" layoutX="10.0" layoutY="352.0" prefHeight="73.0" prefWidth="1096.0" textFill="#1eff00" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <padding>
+                <Insets top="50.0" />
+            </padding>
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="button1Hard" mnemonicParsing="false" onAction="#checkAnswer1" prefHeight="75.0" prefWidth="175.0" style="-fx-background-color:  FIREBRICK;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+        <Button fx:id="button2Hard" mnemonicParsing="false" onAction="#checkAnswer2" prefHeight="75.0" prefWidth="175.0" style="-fx-background-color:  FIREBRICK;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="171.0" />
+            </GridPane.margin>
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+        <Button fx:id="button3Hard" layoutX="193.0" layoutY="348.0" mnemonicParsing="false" onAction="#checkAnswer3" prefHeight="75.0" prefWidth="175.0" style="-fx-background-color:  FIREBRICK;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="325.0" />
+            </GridPane.margin>
+         <font>
+            <Font size="16.0" />
+         </font>
+        </Button>
+        <Button fx:id="button4Hard" mnemonicParsing="false" onAction="#checkAnswer4" prefHeight="75.0" prefWidth="175.0" style="-fx-background-color:  FIREBRICK;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="475.0" />
+            </GridPane.margin>
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+        <Button mnemonicParsing="false" onAction="#next" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color:  FIREBRICK;" text="Next" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+        <Label fx:id="wrongHard" alignment="CENTER" layoutX="277.0" layoutY="499.0" prefHeight="73.0" prefWidth="1229.0" textFill="#ff1600" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <padding>
+                <Insets top="50.0" />
+            </padding>
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </Label>
+        <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: GREY;" text="My name is Nancy. I am eleven years old and I am in year 6. &#10;I go to Belatrix Potter School in London. &#10;There are about 270 students in my school. &#10;My class has got 25 students. &#10;My school starts at 9.00 and finishes at 3.30. &#10;I study English, Mathematics, Science and History. &#10;My favorite school day is Tuesday. &#10;My first lesson is history, at 9.00. We usually watch videos. &#10;At 9.45 I have got Science. &#10;I like science because we make exploding mixtures.&#10;At 10.40 there is a break, and I eat a cheese sandwich or fruit and &#10;drink fruit juice. &#10;Lunchtime is at 12.30, but before that I have Math. &#10;I also have lessons in the afternoon.&#10;The first lesson is English. I like learning this subject and the lessons &#10;are fun. &#10;That was my usual Tuesday.&#10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <font>
+                <Font size="19.0" />
+            </font></TextArea>
+        <Label fx:id="questionLabelHard" alignment="CENTER" prefHeight="44.0" prefWidth="1126.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets bottom="125.0" />
+            </GridPane.margin>
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </Label>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+         <image>
+            <Image url="@../Pictures/Girl.png" />
+         </image>
+      </ImageView>
+        <Button mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="40.0" style="-fx-background-color: DARKGREY;" GridPane.valignment="TOP">
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Pictures/Arrow.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+</GridPane>

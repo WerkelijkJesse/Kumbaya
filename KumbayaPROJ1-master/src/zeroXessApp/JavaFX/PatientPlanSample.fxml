@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zeroXessApp.JavaFX.PatientPlanController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="400.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="timeLabel" alignment="CENTER" prefHeight="39.0" prefWidth="8000.0" style="-fx-background-color: DARKGREY;" text="Label" GridPane.columnSpan="3" GridPane.valignment="TOP">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#backClick" prefHeight="35.0" prefWidth="40.0" style="-fx-background-color: DARKGREY;" GridPane.valignment="TOP">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ChoiceBox fx:id="choiceBox" prefHeight="25.0" prefWidth="594.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="110.0" />
+         </GridPane.margin>
+      </ChoiceBox>
+      <DatePicker fx:id="datePicker" prefHeight="25.0" prefWidth="800.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="20.0" />
+         </GridPane.margin>
+      </DatePicker>
+      <Button fx:id="createButton" mnemonicParsing="false" onAction="#makeAppointment" prefHeight="150.0" prefWidth="500.0" style="-fx-background-color: LAVENDER;" text="Create!" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="30.0" right="30.0" />
+         </GridPane.margin></Button>
+      <TableView fx:id="tableView" maxHeight="150.0" prefHeight="150.0" prefWidth="266.0" GridPane.columnIndex="1">
+        <columns>
+            <TableColumn fx:id="realName" prefWidth="53.33" text="Name" />
+          <TableColumn fx:id="ear" prefWidth="53.33" text="Ear" />
+          <TableColumn fx:id="eyes" prefWidth="53.33" text="Eyes" />
+            <TableColumn fx:id="skin" prefWidth="53.33" text="Skin" />
+            <TableColumn fx:id="general" prefWidth="53.33" text="General" />
+        </columns>
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+      </TableView>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <RadioButton fx:id="b1" mnemonicParsing="false" text="09:00" GridPane.columnIndex="1">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Buttons" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="b16" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="16:30" toggleGroup="$Buttons" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <RadioButton fx:id="b12" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="14:30" toggleGroup="$Buttons" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <RadioButton fx:id="b8" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="12:30" toggleGroup="$Buttons" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <RadioButton fx:id="b4" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="10:30" toggleGroup="$Buttons" GridPane.columnIndex="7" />
+            <RadioButton fx:id="b15" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="16:00" toggleGroup="$Buttons" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <RadioButton fx:id="b11" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="14:00" toggleGroup="$Buttons" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <RadioButton fx:id="b7" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="12:00" toggleGroup="$Buttons" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <RadioButton fx:id="b3" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="10:00" toggleGroup="$Buttons" GridPane.columnIndex="5" />
+            <RadioButton fx:id="b10" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="13:30" toggleGroup="$Buttons" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <RadioButton fx:id="b6" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="11:30" toggleGroup="$Buttons" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <RadioButton fx:id="b14" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="15:30" toggleGroup="$Buttons" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <RadioButton fx:id="b13" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="15:00" toggleGroup="$Buttons" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <RadioButton fx:id="b9" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="13:00" toggleGroup="$Buttons" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <RadioButton fx:id="b2" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="09:30" toggleGroup="$Buttons" GridPane.columnIndex="3" />
+            <RadioButton fx:id="b5" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" text="11:00" toggleGroup="$Buttons" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label textFill="RED" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" fx:id="x1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label textFill="RED" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" fx:id="x5">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label textFill="RED" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER" fx:id="x9">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label textFill="RED" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" fx:id="x13">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label textFill="RED" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" fx:id="x2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label textFill="RED" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" fx:id="x6">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label textFill="RED" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER" fx:id="x10">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label textFill="RED" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" fx:id="x14">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label layoutX="110.0" layoutY="21.0" textFill="RED" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" fx:id="x3">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="210.0" layoutY="21.0" textFill="RED" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" fx:id="x7">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="210.0" layoutY="60.0" textFill="RED" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER" fx:id="x11">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="21.0" textFill="RED" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" fx:id="x4">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="21.0" textFill="RED" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" fx:id="x8">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="21.0" textFill="RED" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER" fx:id="x12">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="21.0" textFill="RED" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" fx:id="x15">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="21.0" textFill="RED" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" fx:id="x16">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" prefHeight="17.0" prefWidth="799.0" text="Please enter relevant information: " GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets top="30.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textArea" maxHeight="50.0" maxWidth="8000.0" prefHeight="50.0" prefWidth="8000.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets top="100.0" />
+         </GridPane.margin></TextArea>
+      <Button mnemonicParsing="false" onAction="#checkAppointmentData" text="Check available appointments" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="10.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+</GridPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zeroXessApp.JavaFX.DoctorController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button mnemonicParsing="false" onAction="#doctorClick" prefHeight="338.0" prefWidth="448.0" style="-fx-background-color: LAVENDER;" text="For doctors" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font></Button>
+      <Button mnemonicParsing="false" onAction="#patientClick" prefHeight="423.0" prefWidth="517.0" style="-fx-background-color: LAVENDER;" text="For patients" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font></Button>
+      <Label fx:id="timeLabel" alignment="CENTER" prefHeight="39.0" prefWidth="8000.0" style="-fx-background-color: DARKGREY;" text="Label" GridPane.columnSpan="3" GridPane.valignment="TOP">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#backClick" prefHeight="35.0" prefWidth="40.0" style="-fx-background-color: DARKGREY;" GridPane.valignment="TOP">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="faqButton" mnemonicParsing="false" onAction="#faqClick" prefHeight="8000.0" prefWidth="8000.0" style="-fx-background-color: LAVENDER;" text="FAQ" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font>
+      </Button>
+      <Label fx:id="noDoctor" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="20.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>

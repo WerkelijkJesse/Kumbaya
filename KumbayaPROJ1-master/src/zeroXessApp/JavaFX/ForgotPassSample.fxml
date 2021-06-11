@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zeroXessApp.JavaFX.ForgotPassController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="266.6666" prefWidth="266.6666" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="266.6666" prefWidth="266.6666" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="266.6666" prefWidth="266.6666" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Please enter:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri" size="28.0" />
+               </font>
+            </Label>
+            <Label text="Username:" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Year of birth:" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="277.0" layoutY="160.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Secret answer" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri" size="28.0" />
+               </font>
+            </Label>
+            <Label text="Enter:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="277.0" layoutY="160.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="userField" GridPane.rowIndex="3" />
+            <TextField fx:id="yobField" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="544.0" layoutY="160.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="bankField" prefHeight="25.0" prefWidth="100.0" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Label fx:id="timeLabel" alignment="CENTER" prefHeight="39.0" prefWidth="8000.0" style="-fx-background-color: DARKGREY;" GridPane.columnSpan="2147483647" GridPane.valignment="TOP">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="goBackButton" minHeight="35.0" minWidth="40.0" mnemonicParsing="false" onAction="#goBackButtonClick" prefHeight="29.0" prefWidth="30.0" style="-fx-background-color: DARKGREY;" GridPane.valignment="TOP">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="wrongLabel" alignment="CENTER" prefHeight="22.0" prefWidth="294.0" textFill="#862828" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="showLabel2" alignment="CENTER" prefHeight="22.0" prefWidth="304.0" textFill="#0ae123" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="showLabel" alignment="CENTER" prefHeight="22.0" prefWidth="371.0" textFill="#0ae123" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="checkButton" mnemonicParsing="false" onAction="#checkButtonClick" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: LAVENDER;" text="Check" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font></Button>
+   </children>
+</GridPane>

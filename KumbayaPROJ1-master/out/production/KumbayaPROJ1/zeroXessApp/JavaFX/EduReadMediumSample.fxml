@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zeroXessApp.JavaFX.EduReadMediumController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="85.0" prefWidth="85.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="8000.0" minWidth="266.6666" prefWidth="638.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="64.0" prefWidth="77.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="145.0" minHeight="110.0" prefHeight="110.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="190.0" minHeight="150.0" prefHeight="153.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="187.0" minHeight="150.0" prefHeight="187.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="150.0" prefHeight="150.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label fx:id="timeLabelMedium" alignment="CENTER" maxWidth="1359.0" prefHeight="39.0" prefWidth="8000.0" style="-fx-background-color: DARKGREY;" GridPane.columnSpan="3" GridPane.valignment="TOP">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Button mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="40.0" style="-fx-background-color: DARKGREY;" GridPane.valignment="TOP">
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Pictures/Arrow.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label fx:id="rightMedium" layoutX="10.0" layoutY="352.0" prefHeight="67.0" prefWidth="580.0" textFill="#1eff00" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <padding>
+                <Insets top="50.0" />
+            </padding>
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="button1Medium" mnemonicParsing="false" onAction="#checkAnswer1" prefHeight="75.0" prefWidth="175.0" style="-fx-background-color: ORANGE;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+        <Button fx:id="button2Medium" mnemonicParsing="false" onAction="#checkAnswer2" prefHeight="75.0" prefWidth="175.0" style="-fx-background-color: ORANGE;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="171.0" />
+            </GridPane.margin>
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+        <Button fx:id="button3Medium" layoutX="193.0" layoutY="348.0" mnemonicParsing="false" onAction="#checkAnswer3" prefHeight="75.0" prefWidth="175.0" style="-fx-background-color: ORANGE;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="325.0" />
+            </GridPane.margin>
+         <font>
+            <Font size="16.0" />
+         </font>
+        </Button>
+        <Button fx:id="button4Medium" mnemonicParsing="false" onAction="#checkAnswer4" prefHeight="75.0" prefWidth="175.0" style="-fx-background-color: ORANGE;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="475.0" />
+            </GridPane.margin>
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+        <Button mnemonicParsing="false" onAction="#next" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: ORANGE;" text="Next" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+        <Label fx:id="wrongMedium" alignment="CENTER" layoutX="277.0" layoutY="499.0" prefHeight="73.0" prefWidth="896.0" textFill="#ff1600" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <padding>
+                <Insets top="50.0" />
+            </padding>
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </Label>
+        <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: GREY;" text="“Brrr! This damp air makes me shiver, “said Peg-Leg Pete. &#10;&quot;I sure do hope we spot Wilma soon.”&#10; It was a clear morning and Captain Cork was wide awake as he &#10; looked through his spyglass. &#10;He and his brave crow had been sailing for many weeks. &#10;They were hoping to see their friend, Wilma the Whale. &#10;The trip was getting dull with nothing but ocean to look at. &#10;The captain knew they were on the correct course because they &#10;had seen Wilma many other times. &#10;Suddenly there was a loud splash. It was Wilma! &#10;As everybody cheered, Wilma made a fancy flip in the water as if to &#10;say hello. &#10;It was great to see her again.&#10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <font>
+                <Font size="19.0" />
+            </font></TextArea>
+        <Label fx:id="questionLabelMedium" alignment="CENTER" prefHeight="44.0" prefWidth="788.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets bottom="125.0" />
+            </GridPane.margin>
+            <font>
+                <Font name="Calibri" size="32.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+         <image>
+            <Image url="@../Pictures/Whale.png" />
+         </image>
+      </ImageView>
+    </children>
+</GridPane>

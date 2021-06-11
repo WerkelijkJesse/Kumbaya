@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="grid" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: DARKGREY;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zeroXessApp.JavaFX.HomeController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="8000.0" prefWidth="266.6666" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="8000.0" prefWidth="266.6666" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="8000.0" prefWidth="266.6666" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints prefHeight="8000.0" vgrow="ALWAYS" />
+    <RowConstraints prefHeight="8000.0" vgrow="ALWAYS" />
+    <RowConstraints maxHeight="8000.0" prefHeight="8000.0" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="8000.0" prefHeight="8000.0" vgrow="ALWAYS" />
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="261.0" prefWidth="496.0" style="-fx-background-color: DARKGREY;" GridPane.columnSpan="3" GridPane.rowSpan="2">
+         <children>
+            <Label alignment="CENTER" layoutX="28.0" layoutY="13.0" prefHeight="33.0" prefWidth="79.0" text="Welcome">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" alignment="CENTER" layoutX="7.0" layoutY="46.0" prefHeight="33.0" prefWidth="122.0">
+               <font>
+                  <Font name="Calibri" size="22.0" />
+               </font>
+            </Label>
+         </children>
+         <GridPane.margin>
+            <Insets top="39.0" />
+         </GridPane.margin>
+      </Pane>
+      <Button fx:id="doctorButton" maxHeight="8000.0" maxWidth="8000.0" mnemonicParsing="false" onAction="#doctorClick" prefHeight="8000.0" prefWidth="8000.0" style="-fx-background-color: #0CB4A3;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <graphic>
+            <ImageView fitHeight="120.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Doctor.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Label fx:id="timeLabel2" alignment="CENTER" prefHeight="39.0" prefWidth="8000.0" style="-fx-background-color: DARKGREY;" textAlignment="CENTER" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutButton" minHeight="35.0" minWidth="40.0" mnemonicParsing="false" onAction="#loguitClick" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: DARKGREY;" GridPane.valignment="TOP">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/LogOut.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="marktButton" maxHeight="8000.0" maxWidth="8000.0" mnemonicParsing="false" onAction="#marktClick" prefHeight="8000.0" prefWidth="8000.0" style="-fx-background-color: #FFF871;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <graphic>
+            <ImageView fitHeight="120.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Market.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="animalButton" maxHeight="8000.0" maxWidth="8000.0" mnemonicParsing="false" onAction="#animalClick" prefHeight="8000.0" prefWidth="8000.0" style="-fx-background-color: Pink;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <graphic>
+            <ImageView fitHeight="120.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Vee.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="contactsButton" maxHeight="8000.0" maxWidth="8000.0" mnemonicParsing="false" onAction="#contactClick" prefHeight="8000.0" prefWidth="8000.0" style="-fx-background-color: #3C3CFF;" GridPane.rowIndex="2">
+         <graphic>
+            <ImageView fitHeight="120.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/ContactsImage.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button maxHeight="8000.0" maxWidth="8000.0" mnemonicParsing="false" onAction="#eduClick" prefHeight="8000.0" prefWidth="8000.0" style="-fx-background-color: LAVENDER;" GridPane.rowIndex="3">
+         <graphic>
+            <ImageView fitHeight="120.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/education.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="dataButton" maxHeight="8000.0" maxWidth="8000.0" mnemonicParsing="false" onAction="#dataClick" prefHeight="8000.0" prefWidth="8000.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <graphic>
+            <ImageView fitHeight="120.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Instellingen.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <TableView fx:id="tableView" maxHeight="400.0" maxWidth="700.0" prefHeight="261.0" prefWidth="534.0" style="-fx-background-color: GREY;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <columns>
+          <TableColumn id="Tijd" fx:id="scores" prefWidth="133.33" text="Scores" />
+            <TableColumn id="Tijd" fx:id="users" prefWidth="133.33" text="User" />
+        </columns>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </TableView>
+      <ListView fx:id="listView" prefHeight="120.0" prefWidth="400.0" style="-fx-control-inner-background: DARKGREY; -fx-background-color: DARKGREY;" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <Label prefHeight="17.0" prefWidth="1107.0" text="  Name                       Adress                                     Date                           Time " GridPane.columnSpan="2">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets top="125.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="CENTER" prefHeight="17.0" prefWidth="643.0" text="EduMath Highscores!" GridPane.columnIndex="2" GridPane.valignment="BOTTOM">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="timeLabel" contentDisplay="CENTER" prefHeight="40.0" prefWidth="190.0" text="Time" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+            </Label>
+      <Label fx:id="dateLabel" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="40.0" prefWidth="190.0" text="Date" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>
